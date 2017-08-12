@@ -1,0 +1,61 @@
+{
+    "env": {
+        "es6": true,
+        "node": true
+    },
+    "extends": "eslint:recommended",
+    "rules": {
+        "indent": [
+            "error",
+            2,
+            {
+                "SwitchCase": 1,
+                "MemberExpression": 1,
+                "VariableDeclarator": 2,
+                "FunctionDeclaration": {
+                    "parameters": "first"
+                },
+                "FunctionExpression": {
+                    "parameters": "first"
+                }
+            }
+        ],
+        "linebreak-style": [ "error", "unix" ],
+        "quotes": [ "error", "single" ],
+        "semi": [ "error", "always" ],
+        "valid-jsdoc": "error",
+        "no-tabs": "error",
+        "prefer-rest-params": "error",
+        "no-var": "error",
+        "object-shorthand": "error",
+        "no-eval": "error",
+        "no-magic-numbers": [
+            "error",
+            {
+                "enforceConst": true,
+                "detectObjects": true
+            }
+        ],
+        "curly": [ "error", "multi-line", "consistent" ],
+        "no-implied-eval": "error",
+        "eqeqeq": [ "error", "smart" ],
+        "consistent-return": "error",
+        "no-return-assign": [ "error", "always" ],
+        "no-return-await": "warn",
+        "comma-dangle": [ "warn", "always-multiline" ],
+        "eol-last": "error",
+        "func-call-spacing": "error",
+        "arrow-spacing": "error",
+        "generator-star-spacing": "error",
+        "prefer-const": "error",
+        "prefer-template": "warn",
+        "prefer-spread": "warn",
+        "prefer-destructuring": [
+            "warn",
+            {
+                "array": true,
+                "object": false
+            }
+        ]
+    }
+}
